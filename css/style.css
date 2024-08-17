@@ -1,0 +1,166 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Section and Header Styling */
+header, footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #0066cc;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav ul li a:hover {
+    background-color: #00509e;
+}
+
+/* List Styling with Hanging Indentation */
+.education-list, .experience-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 1.5rem;
+}
+
+.education-list li, .experience-list li {
+    padding: 0.5rem 0;
+    text-indent: -1.5rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.education-list li::before, .experience-list li::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 0.75rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #003366;
+    border-radius: 50%;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+/* List Styling with Hanging Indentation for Publications */
+.publications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 1.5rem;
+}
+
+.publications-list li {
+    padding: 0.5rem 0;
+    text-indent: -1.5rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.publications-list li::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 0.75rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #003366;
+    border-radius: 50%;
+}
+
+/* List Styling with Hanging Indentation for Conference Presentations */
+.presentations-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 1.5rem;
+}
+
+.presentations-list li {
+    padding: 0.5rem 0;
+    text-indent: -1.5rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.presentations-list li::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 0.75rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #003366;
+    border-radius: 50%;
+}
+
+/* Research Item Styling */
+.research-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.research-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 1.5rem;
+}
+
+.research-item h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.research-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
