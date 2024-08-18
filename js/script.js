@@ -1,9 +1,41 @@
 // script.js
-document.addEventListener('DOMContentLoaded', function () {
-    console.log("Website is ready!");
-    // Add more interactivity here
+document.addEventListener("DOMContentLoaded", function() {
+    // Hide email link if JavaScript is disabled
+    const emailLink = document.getElementById("emailLink");
+    emailLink.href = "mailto:bradley.martin@shu.edu";
+
+    const form = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        // Honeypot check
+        if (document.getElementById("website").value !== "") {
+            formMessage.textContent = "Submission failed.";
+            return;
+        }
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch("/submit_form", { // Replace with your backend endpoint
+                method: "POST",
+                body: formData,
+            });
+
+            if (response.ok) {
+                formMessage.textContent = "Thank you! Your message has been sent.";
+                form.reset();
+            } else {
+                formMessage.textContent = "There was an error sending your message. Please try again later.";
+            }
+        } catch (error) {
+            formMessage.textContent = "There was an error sending your message. Please try again later.";
+        }
+    });
 });
-// script.js
+
 
 function searchPublications() {
     let input = document.getElementById('searchBar').value.toLowerCase();
@@ -35,13 +67,5 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         formMessage.style.color = "green";
         // In a real application, this is where you would send the form data to the server
         document.getElementById('contactForm').reset(); // Reset form fields
-    }
-});
-document.getElementById('menuToggle').addEventListener('click', function() {
-    let menu = document.getElementById('menu');
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
     }
 });

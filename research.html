@@ -10,12 +10,13 @@
 
     <body>
         <header>
-            <h1>Research Interests</h1>
+            <h1>Research Projects</h1>
         </header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html">Research Interests</a></li>
+                <li><a href="people.html">People</a></li>
                 <li><a href="education.html">Education & Experience</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="presentations.html">Conference Presentations</a>
@@ -24,13 +25,132 @@
             </ul>
         </nav>
         <section>
-            <h2>Research Interests</h2>
+            <h2>Ongoing Research Projects</h2>
+            <div class="research-item">
+                <div>
+                    <h3>Research Summary</h3>
+                    <p>My research is driven by a passion for
+                        understanding
+                        the complexities of life through the lens of genomics
+                        and
+                        computational biology. Whether through developing
+                        innovative
+                        software tools such as PG-SUI, advancing species
+                        delimitation
+                        techniques with SuperDeli, or exploring the evolutionary
+                        dynamics of
+                        hybrid
+                        zones, my goal is to contribute to the scientific
+                        community's ability to study and conserve the natural
+                        world
+                        in an era of rapid environmental change and habitat
+                        destruction.</p>
+                </div>
+            </div>
+
+            <div class="research-item">
+                <img src="assets/images/geogenie-logo.png"
+                    alt="GeoGenIE Software Logo" class="research-logo">
+                <div>
+                    <h3>GeoGenIE: Geographic-Genetic Inference Engine</h3>
+                    <p>GeoGenIE (Geographic-Genetic Inference Engine) is an
+                        advanced
+                        software tool designed to use deep learning for
+                        predicting
+                        geographic localities (latitude and longitude) based on
+                        genetic SNP
+                        data inputs. Built on PyTorch, GeoGenIE is specifically
+                        optimized to
+                        account for geographic sampling bias and the limited
+                        number of SNPs
+                        typically found in GT-seq panels. This software is a
+                        powerful
+                        resource for researchers who need to infer geographic
+                        origins from
+                        genetic data, providing a robust framework for handling
+                        complex
+                        datasets.</p>
+                    <p>GeoGenIE not only excels in prediction accuracy compared
+                        to other existing software, but also
+                        offers a
+                        wealth of metrics and visualizations that allow users to
+                        thoroughly
+                        assess model performance. The software is highly
+                        user-friendly,
+                        ensuring that even those with limited experience in deep
+                        learning
+                        can effectively utilize its capabilities. GeoGenIE is
+                        also highly
+                        efficient, with optional parallelized bootstrapping
+                        across multiple
+                        CPU cores to speed up analysis. Users have extensive
+                        flexibility in
+                        modifying model parameters, visualization options, and
+                        preprocessing
+                        settings, all while adhering to standard best practices.
+                        GeoGenIE
+                        leverages vectorized Python modules such as numpy,
+                        scipy,
+                        scikit-learn, and pandas, ensuring both speed and
+                        reliability in
+                        processing.</p>
+                </div>
+            </div>
+
+            <div class="research-item">
+                <img src="assets/images/snpio-logo.png"
+                    alt="SNPio Software Logo" class="research-logo">
+                <div>
+                    <h3>SNPio: Object-Oriented Python API for Popultion Genomic
+                        Data
+                        Filtering, Visualization, and File Conversion</h3>
+                    <p>SNPio is a cutting-edge software project aimed at
+                        creating a
+                        user-friendly, object-oriented Python API designed for
+                        reading,
+                        filtering, and converting various standard genomic data
+                        file
+                        formats. In the complex field of genomics, researchers
+                        often face
+                        challenges when dealing with diverse data formats and
+                        the need for
+                        efficient data manipulation tools. SNPio addresses these
+                        challenges
+                        by providing a streamlined interface that simplifies the
+                        management
+                        of genomic datasets, enabling users to focus on analysis
+                        rather than
+                        data handling.</p>
+                    <p>This software is particularly valuable because it brings
+                        together a
+                        wide range of functionalities within a single framework,
+                        making it
+                        easier for researchers to process and analyze genomic
+                        data. With
+                        SNPio, tasks like filtering large SNP datasets,
+                        converting between
+                        formats (e.g., VCF, STRUCTURE, PHYLIP), and integrating
+                        data
+                        from different
+                        sources are made straightforward and accessible, even to
+                        those with
+                        limited programming experience. Ongoing development
+                        efforts include
+                        expanding the API’s capabilities to support additional
+                        file formats,
+                        enhancing performance, calculating summary statistics ad
+                        visualization, and integrating SNPio with
+                        popular
+                        bioinformatics tools and pipelines.</p>
+                </div>
+            </div>
+
 
             <div class="research-item">
                 <img src="assets/images/pg-sui-logo.png" alt="PG-SUI Logo"
                     class="research-logo">
                 <div>
-                    <h3>Genomic SNP Data Imputation using AI (PG-SUI)</h3>
+                    <h3>Genomic SNP Imputation using AI (PG-SUI)</h3>
                     <p>One of my key research projects is the development of
                         PG-SUI (Population Genomics - Supervised and
                         Unsupervised Imputation), an AI-based framework for
@@ -39,28 +159,35 @@
                         in population genomics, often leading to biased results
                         and reduced statistical power. PG-SUI addresses this
                         challenge by employing both supervised and unsupervised
-                        machine learning models to accurately predict missing
-                        SNPs based on patterns observed in the existing data.
+                        machine learning models in a user-friendly manner to
+                        accurately predict missing
+                        SNPs based on non-linear patterns observed in the
+                        existing data.
                     </p>
                     <p>This project is particularly significant because it not
                         only enhances the accuracy of population genomic studies
                         but also enables researchers to utilize incomplete
-                        datasets more effectively. By reducing the need for
+                        datasets - a commonplace issue in population genetics -
+                        more effectively. By reducing the need for
                         extensive data collection, PG-SUI accelerates research
                         timelines and lowers costs, making genomic studies more
                         accessible to a broader range of scientists. Ongoing
-                        work involves refining the models to handle a wider
-                        variety of data types and integrating the framework into
+                        work involves refining the existing models to handle a
+                        wider
+                        variety of data types, adding new models, and
+                        integrating the framework into
                         commonly used bioinformatics pipelines.</p>
                 </div>
             </div>
 
             <div class="research-item">
-                <img src="assets/images/species-delimitation-logo.png"
-                    alt="Species Delimitation Logo" class="research-logo">
+                <img src="assets/images/super-deli-logo.png"
+                    alt="Super Deli Logo" class="research-logo">
                 <div>
-                    <h3>Species Delimitation using Machine Learning</h3>
-                    <p>Another major focus of my research is the application of
+                    <h3>Species Delimitation using Machine Learning (SuperDeli)
+                    </h3>
+                    <p>Another current focus of my research is the application
+                        of
                         machine learning techniques to species delimitation—a
                         process crucial for understanding biodiversity,
                         conservation, and evolutionary biology. Traditional
@@ -85,8 +212,8 @@
             </div>
 
             <div class="research-item">
-                <img src="assets/images/hybrid-zones-logo.png"
-                    alt="Hybrid Zones Logo" class="research-logo">
+                <img src="assets/images/hybrid-zone-logo.png"
+                    alt="Hybrid Zone Logo" class="research-logo">
                 <div>
                     <h3>Evolutionary Dynamics of Hybrid Zones</h3>
                     <p>Hybrid zones—regions where distinct species
@@ -104,37 +231,37 @@
                 </div>
             </div>
 
-            <div>
-                <h3>Ongoing Collaborations and Future Directions</h3>
-                <p>My work is highly collaborative, involving partnerships with
-                    researchers in ecology, evolutionary biology, and
-                    computational science. These collaborations allow me to
-                    apply cutting-edge computational methods to a wide range of
-                    biological questions, from the dynamics of disease
-                    resistance in wildlife populations to the genomic
-                    underpinnings of speciation. Looking forward, I aim to
-                    expand my research to include more interdisciplinary
-                    projects that integrate ecological modeling, climate change
-                    predictions, and conservation strategies.</p>
-                <p>In the future, I plan to continue advancing the use of AI and
-                    machine learning in genomics, with a particular focus on
-                    making these tools more accessible to non-experts. This
-                    involves not only developing more intuitive software and
-                    user interfaces but also providing training and resources to
-                    help researchers apply these techniques to their own work.
-                </p>
-            </div>
-
-            <div>
-                <h3>Conclusion</h3>
-                <p>Overall, my research is driven by a passion for understanding
-                    the complexities of life through the lens of genomics and
-                    computational biology. Whether through developing innovative
-                    tools like PG-SUI, advancing species delimitation
-                    techniques, or exploring the evolutionary dynamics of hybrid
-                    zones, my goal is to contribute to the scientific
-                    community's ability to study and conserve the natural world
-                    in an era of rapid environmental change.</p>
+            <div class="research-item research-item-last">
+                <img src="assets/images/collaboration-logo.png"
+                    alt="Decorative image depicting collaboration among peers."
+                    class="research-logo">
+                <div>
+                    <h3>Collaborations and Future Directions</h3>
+                    <p>My work is highly collaborative, involving partnerships
+                        with
+                        researchers in ecology, evolutionary biology, and
+                        computational and data science. These collaborations
+                        allow me to
+                        apply cutting-edge computational methods to a wide range
+                        of
+                        biological questions, from the dynamics of disease
+                        resistance in wildlife populations to the genomic
+                        underpinnings of speciation. Looking forward, I aim to
+                        expand my research to include more interdisciplinary
+                        projects that integrate ecological modeling, climate
+                        change
+                        predictions, and conservation strategies.</p>
+                    <p>In the future, I plan to continue advancing the use of AI
+                        and
+                        machine learning in genomics, with a particular focus on
+                        making these tools more accessible to non-experts. This
+                        involves not only developing more intuitive software and
+                        user interfaces but also providing training and
+                        resources to
+                        help researchers apply these techniques to their own
+                        work.
+                    </p>
+                </div>
             </div>
 
         </section>

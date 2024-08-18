@@ -1,4 +1,4 @@
-/* General Body Styling */
+/* ==================== General Body Styling ==================== */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -8,159 +8,313 @@ body {
     line-height: 1.6;
 }
 
-/* Section and Header Styling */
-header, footer {
-    background-color: #003366;
-    color: white;
+/* ==================== Header, Nav, Section, Footer ==================== */
+header, nav, section, footer {
+    margin: 20px;
+    padding: 10px;
+}
+
+header, nav, footer {
+    background-color: #1665b4; /* Ensures nav has the same background as header and footer */
+    color: #ffffff;
     text-align: center;
-    padding: 1rem;
 }
 
-header h1 {
-    margin: 0;
-}
-
-section {
-    padding: 2rem;
-    background-color: white;
-    margin: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Navigation Styling */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #0066cc;
-    overflow: hidden;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    padding: 0.5rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-nav ul li a:hover {
-    background-color: #00509e;
-}
-
-/* List Styling with Hanging Indentation */
-.education-list, .experience-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 1.5rem;
-}
-
-.education-list li, .experience-list li {
-    padding: 0.5rem 0;
-    text-indent: -1.5rem;
-    margin-left: 1.5rem;
-    position: relative;
-}
-
-.education-list li::before, .experience-list li::before {
-    content: '';
-    position: absolute;
-    left: -2.5rem;
-    top: 0.75rem;
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: #003366;
-    border-radius: 50%;
+/* ==================== Headings ==================== */
+h1 {
+    color: #fff; /* White color for header text */
 }
 
 h2 {
-    color: #003366;
+    color: #1665b4; /* Matches the blue color scheme */
     margin-bottom: 1rem;
 }
 
-footer {
-    margin-top: 2rem;
+/* ==================== Index Item Styling ==================== */
+.index-item h2 {
+    color: #fff; /* White color for header text */
+    margin-bottom: 1rem;
 }
 
-/* List Styling with Hanging Indentation for Publications */
-.publications-list {
-    list-style-type: none;
+.index-logo {
+    width: 18%; /* Width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+/* ==================== Navigation Styling ==================== */
+nav ul {
+    list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 0;
-    margin-left: 1.5rem;
 }
 
-.publications-list li {
-    padding: 0.5rem 0;
-    text-indent: -1.5rem;
-    margin-left: 1.5rem;
-    position: relative;
+nav ul li {
+    margin: 5px 10px;
 }
 
-.publications-list li::before {
-    content: '';
-    position: absolute;
-    left: -2.5rem;
-    top: 0.75rem;
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: #003366;
-    border-radius: 50%;
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text color for better contrast */
+    font-weight: bold;
+    background-color: #1665b4; /* Blue background color on hover */
+    padding: 5px 10px; /* Add padding to increase the clickable area */
+    border-radius: 5px; /* Add rounded corners for a more modern look */
 }
 
-/* List Styling with Hanging Indentation for Conference Presentations */
-.presentations-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 1.5rem;
+nav ul li a:hover {
+    color: #d3bbbb; /* Slightly lighter color on hover for visual feedback */
+    background-color: #333; /* White background color on hover */
+    text-decoration: none; /* Remove underline on hover */
 }
 
-.presentations-list li {
-    padding: 0.5rem 0;
-    text-indent: -1.5rem;
-    margin-left: 1.5rem;
-    position: relative;
-}
-
-.presentations-list li::before {
-    content: '';
-    position: absolute;
-    left: -2.5rem;
-    top: 0.75rem;
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: #003366;
-    border-radius: 50%;
-}
-
-/* Research Item Styling */
+/* ==================== Research Item Styling ==================== */
 .research-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
+    list-style-type: none;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .research-logo {
-    width: 80px;
-    height: 80px;
-    margin-right: 1.5rem;
+    width: 15%; /* Fixed width for the images */
+    margin-right: 20px;
+}
+
+.research-item div {
+    flex-grow: 1;
+    border-bottom: 2px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.research-item-last div {
+    border-bottom: none;
 }
 
 .research-item h3 {
     margin-top: 0;
-    color: #003366;
 }
 
 .research-item p {
-    margin: 0;
+    margin: 10px 0;
     line-height: 1.6;
 }
 
+/* ==================== People Item Styling ==================== */
+.people-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    list-style-type: none;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
 
+.people-logo {
+    width: 10%; /* Fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+}
+
+.people-item div {
+    flex-grow: 1;
+    border-bottom: 2px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.people-item-last div {
+    border-bottom: none;
+}
+
+.people-item h3 {
+    margin-top: 0;
+}
+
+.people-item p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* ==================== Publications List Styling ==================== */
+.publications-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.publications-list li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 3.5em; /* Add padding to align the text with the hanging indent */
+    padding-bottom: 10px;
+    text-indent: -3.5em; /* Create the hanging indent */
+    font-size: 1rem;
+    line-height: 1.6;
+    border-bottom: 1px solid #ccc; /* Add a bottom border for separation */
+    position: relative;
+}
+
+/* Ensure hanging indent starts after the first line */
+.publications-list li::before {
+    content: ""; /* Placeholder content to create hanging indent space */
+    display: inline-block;
+    width: 1.5em; /* Match padding-left of li */
+}
+
+.publications-list li strong {
+    font-weight: bold;
+}
+
+.publications-list li em {
+    font-style: italic;
+    color: #555;
+}
+
+.publications-list li a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.publications-list li a:hover {
+    text-decoration: underline;
+}
+
+.publications-list i {
+    font-style: normal; /* Reset font style to normal */
+}
+
+/* ==================== Responsive Adjustments ==================== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .index-item {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center;
+    }
+
+    .index-logo {
+        width: 50%; /* Image takes full width on smaller screens */
+        max-width: 100%; /* Ensure the image doesn't overflow */
+        margin: 0 0 10px 0; /* Adjust margin to center the image */
+    }
+
+    .research-item {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center;
+    }
+
+    .research-item div {
+        border-bottom: none;
+        padding: 10px 0;
+    }
+
+    .research-logo {
+        width: 50%; /* Image takes full width on smaller screens */
+        max-width: 100%; /* Ensure the image doesn't overflow */
+        margin: 0 0 10px 0; /* Adjust margin to center the image */
+    }
+
+    .people-item {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center;
+    }
+
+    .people-logo {
+        width: 50%; /* Image takes full width on smaller screens */
+        max-width: 100%; /* Ensure the image doesn't overflow */
+        margin: 0 0 10px 0; /* Adjust margin to center the image */
+    }
+
+    .people-item div {
+        border-bottom: none;
+        padding: 10px 0;
+    }
+
+    .publications-list li {
+        font-size: 0.9rem;
+        padding-left: 1.2em; /* Adjust padding for smaller screens */
+        text-indent: -1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .publications-list li {
+        font-size: 0.85rem;
+        padding-left: 1em; /* Further adjustment for very small screens */
+        text-indent: -1em;
+    }
+
+    .research-logo {
+        width: 75%;
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #1665b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #004a87;
+}
+
+#formMessage {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        padding: 0 20px;
+    }
+}

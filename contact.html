@@ -16,6 +16,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html">Research Interests</a></li>
+                <li><a href="people.html">People</a></li>
                 <li><a href="education.html">Education & Experience</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="presentations.html">Conference Presentations</a>
@@ -29,20 +30,28 @@
                 free to contact me using the information below or through the
                 contact form.</p>
             <ul>
-                <li>Email: <a
-                        href="mailto:bradley.martin@shu.edu">bradley.martin@shu.edu</a>
-                </li>
+                <li>Email: <a href="mailto:bradley.martin@shu.edu"
+                        id="emailLink">Click to Email</a></li>
                 <li>GitHub: <a href="https://github.com/btmartin721"
                         target="_blank">https://github.com/btmartin721</a></li>
             </ul>
-            <form id="contactForm">
+            <form id="contactForm" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br>
+
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="50"
                     required></textarea><br>
+
+                <!-- Honeypot field for bots -->
+                <div style="display: none;">
+                    <label for="website">Website (Leave empty):</label>
+                    <input type="text" id="website" name="website">
+                </div>
+
                 <input type="submit" value="Send">
             </form>
             <p id="formMessage"></p>
