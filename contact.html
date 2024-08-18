@@ -30,44 +30,40 @@
                 free to contact me using the information below or through the
                 contact form.</p>
             <ul>
-                <!-- Do not display actual email to prevent bot scraping -->
                 <li>Email: <a href="mailto:bradley.martin@shu.edu"
                         id="emailLink">Click to Email</a></li>
                 <li>GitHub: <a href="https://github.com/btmartin721"
                         target="_blank">https://github.com/btmartin721</a></li>
             </ul>
-
-            <!-- Contact Form -->
-            <!-- Use honeypot to filter out auto bot submission; disables javascript if this hidden field is filled out -->
-            <form name="contact" method="POST" data-netlify="true"
-                netlify-honeypot="bot-field">
+            <form id="contactForm" name="contact" method="POST"
+                data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="subject"
-                    value="Martin Lab Contact Form Submitted from martin-lab.netlify.app" />
+                    value="Martin Lab Contact Form Submitted from www.martin-lab.com" />
                 <p>
-                    <label>Your Name: <input type="text" name="name"
+                    <label>Your Name: <input type="text" name="name" id="name"
                             required /></label>
                 </p>
                 <p>
                     <label>Your Email: <input type="email" name="email"
-                            required /></label>
+                            id="email" required /></label>
                 </p>
                 <p>
                     <label for="message">Message: <textarea id="message"
                             name="message" rows="4" cols="50"
-                            required /></textarea></label>
+                            required></textarea></label>
                 </p>
                 <!-- Honeypot field for bots -->
-                <input type="hidden" name="form-name" value="contactForm" />
                 <div style="display:none;">
-                    <label>Do not fill this out if you're human: <input
+                    <label>This should not be filled out: <input
                             name="bot-field"></label>
                 </div>
-
                 <p>
                     <input type="submit" value="Send">
                 </p>
             </form>
             <p id="formMessage"></p>
+
 
         </section>
         <footer>
