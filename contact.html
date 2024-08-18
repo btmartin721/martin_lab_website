@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact - Bradley T. Martin</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     </head>
 
     <body>
@@ -27,19 +30,26 @@
         <section>
             <h2>Get in Touch</h2>
             <p>If you are interested in my research or have any questions, feel
-                free to contact me using the information below or through the
-                contact form.</p>
+                free to
+                contact me using the information below or through the contact
+                form.</p>
             <ul>
-                <li>Email: <a href="mailto:bradley.martin@shu.edu"
-                        id="emailLink">Click to Email</a></li>
-                <li>GitHub: <a href="https://github.com/btmartin721"
+                <li><i class="fas fa-envelope"></i><a
+                        href="mailto:bradley.martin@shu.edu"
+                        id="emailLink">Click to
+                        Email</a></li>
+                <li><i class="fab fa-github"></i><a
+                        href="https://github.com/btmartin721"
                         target="_blank">https://github.com/btmartin721</a></li>
+                <li><i class="fa-brands fa-x-twitter"></i><a
+                        href="https://twitter.com/turtlePowerYo"
+                        target="_blank">@turtlePowerYo</a></li>
             </ul>
             <form id="contactForm" name="contact" method="POST"
                 data-netlify="true" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="subject"
-                    value="Martin Lab Contact Form Submitted from www.martin-lab.com" />
+                    value="Martin Lab Contact Inquiry Submitted!" />
                 <p>
                     <label>Your Name: <input type="text" name="name" id="name"
                             required /></label>
@@ -63,9 +73,8 @@
                 </p>
             </form>
             <p id="formMessage"></p>
-
-
         </section>
+
         <footer>
             <p>&copy; 2024 Bradley T. Martin</p>
         </footer>

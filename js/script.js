@@ -55,6 +55,18 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     } else {
-        console.error("Form ID missing from the HTML.");
+        console.warn("Form ID missing from the HTML.");
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const currentLocation = window.location.href;
+    const menuItems = document.querySelectorAll("nav ul li a");
+
+    menuItems.forEach(item => {
+        if (item.href === currentLocation) {
+            item.classList.add("active");
+        }
+    });
+});
+

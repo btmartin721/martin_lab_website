@@ -66,9 +66,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #d3bbbb; /* Slightly lighter color on hover for visual feedback */
-    background-color: #333; /* White background color on hover */
+    color: #333; /* Slightly lighter color on hover for visual feedback */
+    background-color: #f4f4f4; /* White background color on hover */
     text-decoration: none; /* Remove underline on hover */
+}
+
+nav ul li a.active {
+    background-color: #f4f4f4; /* Darker blue for the active tab */
+    color: #333; /* Keep text white */
 }
 
 /* ==================== Research Item Styling ==================== */
@@ -266,6 +271,23 @@ nav ul li a:hover {
     }
 }
 
+/* Contact Page Icon Styling */
+ul li i {
+    margin-right: 8px;
+    color: #333;
+}
+
+ul li i.fab.fa-github {
+    color: #333; /* GitHub icon color */
+}
+
+ul li i.fab.fa-twitter {
+    color: #1DA1F2; /* X (formerly Twitter) icon color */
+}
+
+ul li i.fas.fa-envelope {
+    color: #d9534f; /* Email icon color */
+}
 
 /* Form Styling */
 form {
