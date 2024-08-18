@@ -305,6 +305,8 @@ input[type="submit"]:hover {
 #formMessage {
     margin-top: 20px;
     font-weight: bold;
+    text-align: center;
+    color: #004a87;
 }
 
 /* Responsive Adjustments */
