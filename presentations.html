@@ -10,10 +10,13 @@
 
     <body>
         <header>
-            <h1>Conference Presentations</h1>
+            <h1>Martin Lab</h1>
+            <div class="index-item">
+                <h2>Conference Presentations</h2>
+            </div>
         </header>
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html">Research Interests</a></li>
                 <li><a href="people.html">People</a></li>
@@ -21,12 +24,15 @@
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="presentations.html">Conference Presentations</a>
                 </li>
+                <li><a href="software.html">Software</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <section>
             <h2>Conference Presentations</h2>
-            <ul class="publications-list">
+            <ul id="publicationsList" class="publications-list">
+                <input type="text" id="searchBar" onkeyup="searchPublications()"
+                    placeholder="Search for publications...">
                 <li>Douglas, M.R., T.K. Chafin, Z.D. Zbinden, B.T. Martin, M.C.
                     Gray, J.R.
                     Ballard, C.R. Middaugh, M.E. Douglas. (2023, October).

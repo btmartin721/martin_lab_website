@@ -15,9 +15,13 @@ header, nav, section, footer {
 }
 
 header, nav, footer {
-    background-color: #1665b4; /* Ensures nav has the same background as header and footer */
+    background-color: #1665b4; /* Ensures nav has same background as header */
     color: #ffffff;
     text-align: center;
+}
+
+header {
+    padding-bottom: 20px;
 }
 
 /* ==================== Headings ==================== */
@@ -32,6 +36,10 @@ h2 {
 
 /* ==================== Index Item Styling ==================== */
 .index-item h2 {
+    color: #fff; /* White color for header text */
+    margin-bottom: 1rem;
+}
+.index-item h3 {
     color: #fff; /* White color for header text */
     margin-bottom: 1rem;
 }
@@ -160,13 +168,12 @@ nav ul li a.active {
     text-indent: -3.5em; /* Create the hanging indent */
     font-size: 1rem;
     line-height: 1.6;
-    border-bottom: 1px solid #ccc; /* Add a bottom border for separation */
+    border-bottom: 2px solid #ccc; /* Add a bottom border for separation */
     position: relative;
 }
 
 /* Ensure hanging indent starts after the first line */
 .publications-list li::before {
-    content: ""; /* Placeholder content to create hanging indent space */
     display: inline-block;
     width: 1.5em; /* Match padding-left of li */
 }
@@ -181,7 +188,6 @@ nav ul li a.active {
 }
 
 .publications-list li a {
-    color: #0073e6;
     text-decoration: none;
 }
 
@@ -192,6 +198,53 @@ nav ul li a.active {
 .publications-list i {
     font-style: normal; /* Reset font style to normal */
 }
+
+/* ==================== Education List Styling ==================== */
+.education-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.education-list li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-left: 3.5em; /* Add padding to align the text with the hanging indent */
+    padding-bottom: 10px;
+    text-indent: -3.5em; /* Create the hanging indent */
+    font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Ensure hanging indent starts after the first line */
+.education-list li::before {
+    display: inline-block;
+    width: 1.5em; /* Match padding-left of li */
+}
+
+.education-list li strong {
+    font-weight: bold;
+}
+
+.education-list li em {
+    font-style: italic;
+    color: #555;
+}
+
+.education-list li a {
+    text-decoration: none;
+}
+
+.education-list li a:hover {
+    text-decoration: underline;
+}
+
+.education-list i {
+    font-style: normal; /* Reset font style to normal */
+}
+
 
 /* ==================== Responsive Adjustments ==================== */
 @media (max-width: 768px) {
@@ -249,6 +302,11 @@ nav ul li a.active {
         text-indent: -1.2em;
     }
 }
+    .education-list li {
+        font-size: 0.9rem;
+        padding-left: 1.2em; /* Adjust padding for smaller screens */
+        text-indent: -1.2em;
+    }
 
 @media (max-width: 480px) {
     body {
@@ -260,6 +318,12 @@ nav ul li a.active {
     }
 
     .publications-list li {
+        font-size: 0.85rem;
+        padding-left: 1em; /* Further adjustment for very small screens */
+        text-indent: -1em;
+    }
+
+    .education-list li {
         font-size: 0.85rem;
         padding-left: 1em; /* Further adjustment for very small screens */
         text-indent: -1em;
@@ -289,7 +353,7 @@ ul li i.fas.fa-envelope {
     color: #d9534f; /* Email icon color */
 }
 
-/* Form Styling */
+/* Contact Page Form Styling */
 form {
     display: flex;
     flex-direction: column;

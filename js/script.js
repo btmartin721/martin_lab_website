@@ -54,8 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
         });
-    } else {
-        console.warn("Form ID missing from the HTML.");
     }
 });
 
@@ -70,3 +68,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+function searchPublications() {
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    let publicationsList = document.getElementById('publicationsList');
+    let publications = publicationsList.getElementsByTagName('li');
+
+    for (let i = 0; i < publications.length; i++) {
+        let item = publications[i].textContent || publications[i].innerText;
+        if (item.toLowerCase().indexOf(input) > -1) {
+            publications[i].style.display = "";
+        } else {
+            publications[i].style.display = "none";
+        }
+    }
+}
