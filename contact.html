@@ -35,7 +35,8 @@
                 <li>GitHub: <a href="https://github.com/btmartin721"
                         target="_blank">https://github.com/btmartin721</a></li>
             </ul>
-            <form id="contactForm" method="post">
+            <form id="contactForm" method="POST" data-netlify="true"
+                netlify-honeypot="bot-field">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br>
 
@@ -47,10 +48,12 @@
                     required></textarea><br>
 
                 <!-- Honeypot field for bots -->
-                <div style="display: none;">
-                    <label for="website">Website (Leave empty):</label>
-                    <input type="text" id="website" name="website">
+                <input type="hidden" name="form-name" value="contactForm">
+                <div style="display:none;">
+                    <label>Do not fill this out if you're human: <input
+                            name="bot-field"></label>
                 </div>
+
 
                 <input type="submit" value="Send">
             </form>
